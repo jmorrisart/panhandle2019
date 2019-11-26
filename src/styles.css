@@ -1,1 +1,364 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+    opacity: 1;
+    transition: 4s opacity;
+    margin:0;
+    animation: fadein 4s;
+        -moz-animation: fadein 4s; /* Firefox */
+        -webkit-animation: fadein 4s; /* Safari and Chrome */
+        -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: 100;
+  color: #9B9A93;
+  font-size:2em;
+}
+
+/* .mobile-menu-hamburger {
+  color: #9B9A93;
+} */
+
+.container {
+  position: relative;
+  min-height: 100%;
+}
+
+.content-wrap {
+  padding-bottom: 2rem;    /* Footer height */
+}
+
+.page-content-wrap {
+  padding-bottom: 2.5rem;   /* Footer height */
+  min-height:100vh;
+}
+
+/* .coming-soon {
+  border: .5px solid #E0CCC5;
+  width: 100%;
+  margin-top:3rem;
+}
+
+.fall {
+  text-align: center;
+  color: #9B9994;
+  font-family: 'Cormorant Garamond';
+  font-size:3em;
+} */
+
+.menu-desktop {
+  font-family: 'Khula Light', sans-serif;
+  text-align: center;
+}
+
+.menu-desktop>ul {
+  display: flex;
+  width:100%;
+  padding:0;
+}
+
+.menu-desktop>ul>li {
+  flex:1 1 100%;
+  cursor: pointer;
+}
+
+a {
+  font-size: 1.25em;
+  color:#161614;
+  text-decoration: none;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+}
+
+a:hover {
+  color:#9B9A93;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+}
+
+.services {
+  width:100%;
+}
+
+.img-wrapper {
+  margin-left: 8.33%;
+}
+
+.placeholder {
+  background-color: #9B9A93;
+  height:200px;
+  width:100%;
+}
+
+#footer {
+  font-family: 'Khula';
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  color: #E0CCC5;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .col-offset-3 {margin-left:25%;}
+  .col-offset-1 {margin-left:8.33%;}
+
+  .mobile-menu-hamburger, .mobile-menu {
+    display:none;
+  }
+  .menu-desktop {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* for mobile */
+  /* .mobile-menu-hamburger {
+    display: block;
+    width: 15%;
+    margin-left:42.5%;
+    padding-top: 1em;
+    margin-bottom: 1em;
+  } */
+
+  .content-wrap {
+    padding-top:4em;
+  }
+
+  .mobile-menu {
+    font-family: 'Khula Light', sans-serif;
+    font-size:1.5em;
+    text-align: center;
+    background-color: #fff;
+    /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+  }
+
+  .mobile-menu>ul {
+    padding:0;
+  }
+  .mobile-menu>ul>li {
+    margin-top:.5em;
+    margin-bottom:.5em;
+  }
+
+  .hide-menu {
+    width:15%;
+  }
+  .menu-desktop {
+    display: none;
+  }
+
+  .placeholder {
+    width:90%;
+    margin-left:5%;
+  }
+
+
+
+
+
+
+/* everything below is for the mobile dropdown menu taken from https://medium.com/creative-technology-concepts-code/responsive-mobile-dropdown-navigation-using-css-only-7218e4498a99 */
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+
+  .header li a:hover {
+    background-color: #f4f4f4;
+  }
+
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .3s ease-out;
+  }
+
+    .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    /* float: right; */
+    /* padding: 28px 20px; */
+    padding-top:1em;
+    padding-bottom:.5em;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: #9B9A93;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .3s ease-out;
+    width: 18px;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #9B9A93;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .3s ease-out;
+    width: 100%;
+  }
+
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 500px;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+}

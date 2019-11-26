@@ -1,0 +1,108 @@
+<br class="nodisplay"><br class="nodisplay"><br class="nodisplay">
+
+<div class="services-container">
+  <!-- <hr class="left col-s-3" style=""> -->
+  <!-- <h2>Hair Design</h2> -->
+  <img src=".././assets/images/services/hairdesign-11.png" class="services-title" alt="">
+  <div class="col-s-6 col-offset-3">
+    <div class="left services col-s-6">
+      <ng-container *ngFor="let des of design">
+        <p>{{ des }}</p>
+      </ng-container>
+    </div>
+
+    <div class="right services col-s-6">
+      <ng-container *ngFor="let desp of designPrices">
+        <p><span>$</span>{{ desp }}</p>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<hr class="col-s-6 hidden">
+
+<div class="services-container">
+  <img src=".././assets/images/services/styleservices-11.png" class="services-title" alt="">
+  <div class="col-s-6 col-offset-3">
+    <div class="left services col-s-6">
+      <ng-container *ngFor="let sty of style">
+        <p>{{ sty }}</p>
+      </ng-container>
+    </div>
+
+    <div class="right services col-s-6">
+      <ng-container *ngFor="let styp of stylePrices">
+        <p><span>$</span>{{ styp }}</p>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<hr class="col-s-6 hidden">
+
+<div class="services-container">
+  <img src=".././assets/images/services/haircolor-11.png" class="services-title" alt="">
+  <div class="col-s-6 col-offset-3">
+    <div class="left services col-s-6">
+      <ng-container *ngFor="let co of color">
+        <p>{{ co }}</p>
+      </ng-container>
+    </div>
+
+    <div class="right services col-s-6">
+      <ng-container *ngFor="let cop of colorPrices">
+        <p><span>$</span>{{ cop }}</p>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<hr class="col-s-6 hidden">
+
+<div class="services-container">
+  <img src=".././assets/images/services/lashes-11.png" class="services-title" alt="">
+  <div class="col-s-6 col-offset-3">
+    <div class="left services col-s-7">
+      <ng-container *ngFor="let lash of lashes">
+        <p>{{ lash }}</p>
+      </ng-container>
+    </div>
+
+    <div class="right services col-s-5">
+      <ng-container *ngFor="let lashp of lashesPrices">
+        <p><span>$</span>{{ lashp }}</p>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<hr class="col-s-6 hidden">
+
+<div class="services-container">
+  <img src=".././assets/images/services/waxing-11.png" class="services-title" alt="">
+  <div class="col-s-6 col-offset-3">
+    <div class="left services col-s-6">
+      <ng-container *ngFor="let wax of waxing">
+        <p>{{ wax }}</p>
+      </ng-container>
+    </div>
+
+    <div class="right services col-s-6">
+      <ng-container *ngFor="let waxp of waxingPrices">
+        <p><span>$</span>{{ waxp }}</p>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+<hr class="col-s-6 col-offset-3" id="tophr">
+<hr class="col-s-4 col-offset-5" id="bottomhr">
+
+<div id="call-to-action">
+  <p>
+    <a routerLink="/contact">CONTACT US TODAY!</a>
+  </p>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
