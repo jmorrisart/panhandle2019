@@ -50,7 +50,7 @@ ul {
 
 h2 {
   text-align: center;
-  font-family: 'Dancing Script', sans-serif;
+  font-family: "Dancing Script", sans-serif;
   font-weight: 100;
   color: #9B9A93;
   font-size:2em;
@@ -83,12 +83,12 @@ h2 {
 .fall {
   text-align: center;
   color: #9B9994;
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-size:3em;
 } */
 
 .menu-desktop {
-  font-family: 'Khula Light', sans-serif;
+  font-family: "Khula Light", sans-serif;
   text-align: center;
 }
 
@@ -204,7 +204,7 @@ a:hover {
   }
 
   .mobile-menu {
-    font-family: 'Khula Light', sans-serif;
+    font-family: "Khula Light", sans-serif;
     font-size:1.5em;
     text-align: center;
     background-color: #fff;
