@@ -21,7 +21,8 @@
 }
 
 .about-container > p {
-  font-family: "Khula Light", sans-serif;;
+  font-family: "Khula Light", sans-serif;
+  font-weight: 100;
   text-align: justify;
 }
 

@@ -2,6 +2,7 @@
 
 .services {
   font-family: "Khula Light", sans-serif;
+  font-weight: 100;
 }
 
 .left {
@@ -24,6 +25,7 @@
 
 .services>p>span {
   font-family: "Dancing Script";
+  font-weight: 400;
   margin-right: 0.2em;
   color: #9B9A93;
 }
@@ -31,6 +33,7 @@
 #call-to-action>p>a {
   width:100%;
   font-family: "Khula Light", sans-serif;
+  font-weight: 400;
 }
 #call-to-action>p {
   text-align: center;
